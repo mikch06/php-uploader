@@ -10,6 +10,7 @@
 <?php
   $dir = "images/*.jpg";
   $images = glob( $dir );
+  rsort($images); // sort newest first
   foreach( $images as $image ):
       echo "<img src='" . $image . "' class=gallery>";
   endforeach;

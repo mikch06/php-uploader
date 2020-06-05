@@ -7,17 +7,13 @@
 </head>
 <body>
 
-<div class="jumbotron">
-
+<div class="jumbotron" align="center">
             <form action="script/upload.php" method="POST" enctype="multipart/form-data">
          <input type="submit" value="Upload!" class="btn btn-primary btn-lg">
          <input type="file" name="image">
-
       </form>
 </div>
-
-
-
+<br>
 <?php include 'gallery.php' ?>
 </body>
 </html> 
