@@ -2,14 +2,21 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Uploader!</title>
 </head>
 <body>
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-      <form action="script/upload.php" method="POST" enctype="multipart/form-data">
+
+<div class="jumbotron">
+
+            <form action="script/upload.php" method="POST" enctype="multipart/form-data">
          <input type="file" name="image">
-         <input type="submit" value="Upload!">
+         <input type="submit" value="Upload!" class="btn btn-primary btn-lg">
       </form>
+</div>
+
+
+
+<?php include 'gallery.php' ?>
 </body>
 </html> 
