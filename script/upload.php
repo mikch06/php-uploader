@@ -10,16 +10,17 @@
       
       $extensions= array("jpeg","jpg","png");
       
-      if(in_array($file_ext,$extensions)=== false){
+      if(in_array($file_ext,$extensions)== false){
          $errors[]="extension not allowed, please choose a JPEG or PNG file.";
       }
       
       if($file_size > 5000000){
          $errors[]='File size must be excately 2 MB';
       }
-      
+     
+      $now = date("Y-m-d-H-i-s"); 
       if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"../images/".$file_name);
+         move_uploaded_file($file_tmp,"../images/$now.jpg");
          echo "Thanks!";
       }else{
          print_r($errors);
