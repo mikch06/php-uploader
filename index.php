@@ -10,8 +10,9 @@
 <div class="jumbotron">
 
             <form action="script/upload.php" method="POST" enctype="multipart/form-data">
-         <input type="file" name="image">
          <input type="submit" value="Upload!" class="btn btn-primary btn-lg">
+         <input type="file" name="image">
+
       </form>
 </div>
 
